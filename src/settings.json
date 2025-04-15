@@ -1,5 +1,5 @@
 {
-  "name": "Rynn Api's",
+  "name": "NekoApi's",
   "version": "Rynn UI",
   "description": "Simple and Easy-to-Use API Documentation",
   "header": {
@@ -14,7 +14,7 @@
     }
   },
   "apiSettings": {
-    "creator": "Rynn"
+    "creator": "Naoki"
   },
   "links": [
     {
