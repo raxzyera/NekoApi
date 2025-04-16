@@ -11,7 +11,7 @@ body.no-scroll {
 }
 
 .navbar {
-    background-color: #E6FFFA;
+    background-color: rgba(247, 250, 252, 0.9);
     padding: 15px 32px;
     position: fixed;
     top: 0;
@@ -19,12 +19,13 @@ body.no-scroll {
     right: 0;
     z-index: 100;
     transition: all 0.3s ease;
-    border-bottom: 1px solid #B2F5EA;
+    border-bottom: 1px solid rgba(203, 213, 224, 0.4);
+    backdrop-filter: blur(12px);
 }
 
 .navbar.scrolled {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03);
-    background-color: rgba(230, 255, 250, 0.95);
+    background-color: rgba(247, 250, 252, 0.95);
 }
 
 .navbar-brand {
@@ -64,20 +65,23 @@ body.no-scroll {
     overflow-y: auto;
 }
 
-#apiQueryInputContainer input, #searchInput {
+#apiQueryInputContainer input,
+#searchInput {
     transition: all 0.3s ease;
     border: 1px solid #B2F5EA;
     background-color: #F0FFF4;
 }
 
-#apiQueryInputContainer input:focus, #searchInput:focus {
+#apiQueryInputContainer input:focus,
+#searchInput:focus {
     outline: 3px solid #38B2AC !important;
     border: 1px solid #38B2AC;
     box-shadow: none;
     background-color: white;
 }
 
-#apiResponseContent, #apiEndpoint {
+#apiResponseContent,
+#apiEndpoint {
     font-family: monospace;
     white-space: pre-wrap;
     word-wrap: break-word;
@@ -172,23 +176,18 @@ body.no-scroll {
     color: #4A5568;
 }
 
-/* Tombol cyan dengan efek glassmorphism */
 .btn-dark {
-    background: rgba(0, 255, 255, 0.2);
+    background-color: rgba(50, 151, 149, 0.7);
     color: #fff;
-    border: 1px solid rgba(0, 255, 255, 0.4);
-    border-radius: 12px;
+    border: none;
+    border-radius: 8px;
     padding: 8px 20px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
     transition: all 0.3s ease;
+    backdrop-filter: blur(6px);
 }
 
 .btn-dark:hover {
-    background: rgba(0, 255, 255, 0.35);
-    box-shadow: 0 6px 25px rgba(0, 255, 255, 0.3);
-    color: #fff;
+    background-color: rgba(44, 122, 123, 0.9);
 }
 
 .form-control.is-invalid {
@@ -220,7 +219,6 @@ body.no-scroll {
     }
 }
 
-/* Additional color accents */
 a {
     color: #319795;
 }
@@ -233,7 +231,6 @@ a:hover {
     color: #718096 !important;
 }
 
-/* Form elements */
 .form-control {
     background-color: #F0FFF4;
     border: 1px solid #B2F5EA;
