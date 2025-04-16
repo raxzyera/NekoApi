@@ -1,6 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
-    color: #4B4B4B;
+    color: #2C2C2C;
+    background-color: #FAFAFA;
     padding: 50px 30px;
     padding-top: 100px;
 }
@@ -10,7 +11,7 @@ body.no-scroll {
 }
 
 .navbar {
-    background-color: white;
+    background-color: #FFFFFF;
     padding: 15px 32px;
     position: fixed;
     top: 0;
@@ -18,14 +19,15 @@ body.no-scroll {
     right: 0;
     z-index: 100;
     transition: box-shadow 0.3s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .navbar.scrolled {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
-    color: #333;
+    color: #007BFF;
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -42,7 +44,7 @@ body.no-scroll {
 }
 
 .spinner-border.custom-spinner {
-    color: #333;
+    color: #007BFF;
 }
 
 .modal-content {
@@ -60,17 +62,20 @@ body.no-scroll {
     overflow-y: auto;
 }
 
-#apiQueryInputContainer input, #searchInput {
+#apiQueryInputContainer input,
+#searchInput {
     transition: outline 0.3s ease;
 }
 
-#apiQueryInputContainer input:focus, #searchInput:focus {
-    outline: 3px solid #333 !important;
+#apiQueryInputContainer input:focus,
+#searchInput:focus {
+    outline: 2px solid #007BFF !important;
     border: none;
-    box-shadow: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
 }
 
-#apiResponseContent, #apiEndpoint {
+#apiResponseContent,
+#apiEndpoint {
     font-family: monospace;
     white-space: pre-wrap;
     word-wrap: break-word;
@@ -84,6 +89,7 @@ body.no-scroll {
     display: block;
     text-decoration: underline;
     margin-bottom: 0.3rem;
+    color: #007BFF;
 }
 
 #loadingScreen {
@@ -115,7 +121,7 @@ body.no-scroll {
 }
 
 #version {
-    background-color: #333;
+    background-color: #007BFF;
     color: white;
     padding: 5px 12px;
     font-size: 11px;
@@ -129,8 +135,8 @@ body.no-scroll {
 
 .hero-section {
     padding: 20px 25px;
-    background-color: #F8F9FA;
-    color: #333;
+    background-color: #f0f4f8;
+    color: #2C2C2C;
     border-radius: 10px;
     height: 80px;
     display: flex;
@@ -154,15 +160,20 @@ body.no-scroll {
 
 .lead {
     font-size: 15px;
-    color: #666;
+    color: #555;
 }
 
 .btn-dark {
-    background-color: #333;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
     color: #fff;
     border: none;
     border-radius: 8px;
     padding: 8px 20px;
+    transition: background 0.3s ease;
+}
+
+.btn-dark:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
 }
 
 .form-control.is-invalid {
@@ -174,8 +185,8 @@ body.no-scroll {
 }
 
 .param-container .form-control:focus {
-    border-color: #333;
-    box-shadow: 0 0 0 0.25rem rgba(51, 51, 51, 0.25);
+    border-color: #007BFF;
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
 }
 
 @media screen and (min-width: 768px) {
