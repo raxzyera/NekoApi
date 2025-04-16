@@ -1,9 +1,9 @@
 body {
     font-family: 'Poppins', sans-serif;
-    color: #2C2C2C;
-    background-color: #FAFAFA;
+    color: #2D3748;
     padding: 50px 30px;
     padding-top: 100px;
+    background-color: #F7FAFC;
 }
 
 body.no-scroll {
@@ -11,23 +11,24 @@ body.no-scroll {
 }
 
 .navbar {
-    background-color: #FFFFFF;
+    background-color: #E6FFFA;
     padding: 15px 32px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
-    transition: box-shadow 0.3s ease;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #B2F5EA;
 }
 
 .navbar.scrolled {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03);
+    background-color: rgba(230, 255, 250, 0.95);
 }
 
 .navbar-brand {
-    color: #007BFF;
+    color: #2C7A7B;
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -44,11 +45,12 @@ body.no-scroll {
 }
 
 .spinner-border.custom-spinner {
-    color: #007BFF;
+    color: #319795;
 }
 
 .modal-content {
     padding: 10px;
+    border: 1px solid #B2F5EA;
 }
 
 .modal-dialog {
@@ -62,23 +64,27 @@ body.no-scroll {
     overflow-y: auto;
 }
 
-#apiQueryInputContainer input,
-#searchInput {
-    transition: outline 0.3s ease;
+#apiQueryInputContainer input, #searchInput {
+    transition: all 0.3s ease;
+    border: 1px solid #B2F5EA;
+    background-color: #F0FFF4;
 }
 
-#apiQueryInputContainer input:focus,
-#searchInput:focus {
-    outline: 2px solid #007BFF !important;
-    border: none;
-    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+#apiQueryInputContainer input:focus, #searchInput:focus {
+    outline: 3px solid #38B2AC !important;
+    border: 1px solid #38B2AC;
+    box-shadow: none;
+    background-color: white;
 }
 
-#apiResponseContent,
-#apiEndpoint {
+#apiResponseContent, #apiEndpoint {
     font-family: monospace;
     white-space: pre-wrap;
     word-wrap: break-word;
+    background-color: #F0FFF4;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #B2F5EA;
 }
 
 #apiResponseContent::-webkit-scrollbar {
@@ -89,7 +95,7 @@ body.no-scroll {
     display: block;
     text-decoration: underline;
     margin-bottom: 0.3rem;
-    color: #007BFF;
+    color: #2C7A7B;
 }
 
 #loadingScreen {
@@ -98,7 +104,7 @@ body.no-scroll {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: #E6FFFA;
     z-index: 9999;
     display: flex;
     justify-content: center;
@@ -118,10 +124,11 @@ body.no-scroll {
     font-size: 32px;
     line-height: 1;
     z-index: 2;
+    color: #2C7A7B;
 }
 
 #version {
-    background-color: #007BFF;
+    background-color: #319795;
     color: white;
     padding: 5px 12px;
     font-size: 11px;
@@ -135,13 +142,14 @@ body.no-scroll {
 
 .hero-section {
     padding: 20px 25px;
-    background-color: #f0f4f8;
-    color: #2C2C2C;
+    background-color: #E6FFFA;
+    color: #2C7A7B;
     border-radius: 10px;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: 1px solid #B2F5EA;
 }
 
 .hero-section > div {
@@ -156,37 +164,38 @@ body.no-scroll {
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     line-height: 1.2;
+    color: #4FD1C5;
 }
 
 .lead {
     font-size: 15px;
-    color: #555;
+    color: #4A5568;
 }
 
 .btn-dark {
-    background: linear-gradient(135deg, #007BFF, #0056b3);
+    background-color: #319795;
     color: #fff;
     border: none;
     border-radius: 8px;
     padding: 8px 20px;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .btn-dark:hover {
-    background: linear-gradient(135deg, #0056b3, #003f7f);
+    background-color: #2C7A7B;
 }
 
 .form-control.is-invalid {
-    border-color: #dc3545;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+    border-color: #E53E3E;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23E53E3E'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23E53E3E' stroke='none'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: right calc(0.375em + 0.1875rem) center;
     background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
 
 .param-container .form-control:focus {
-    border-color: #007BFF;
-    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+    border-color: #38B2AC;
+    box-shadow: 0 0 0 0.25rem rgba(56, 178, 172, 0.25);
 }
 
 @media screen and (min-width: 768px) {
@@ -203,4 +212,27 @@ body.no-scroll {
         max-width: 100%;
         max-height: 60vh;
     }
+}
+
+/* Additional color accents */
+a {
+    color: #319795;
+}
+
+a:hover {
+    color: #2C7A7B;
+}
+
+.text-muted {
+    color: #718096 !important;
+}
+
+/* Form elements */
+.form-control {
+    background-color: #F0FFF4;
+    border: 1px solid #B2F5EA;
+}
+
+.form-control:focus {
+    background-color: white;
 }
