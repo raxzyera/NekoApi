@@ -19,7 +19,7 @@ body.no-scroll {
     right: 0;
     z-index: 100;
     transition: all 0.3s ease;
-    border-bottom: 1px solid #FBB6CE;
+   /* border-bottom: 1px solid #FBB6CE;*/
 }
 
 .navbar.scrolled {
