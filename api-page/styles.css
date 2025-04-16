@@ -19,6 +19,7 @@ body.no-scroll {
     right: 0;
     z-index: 100;
     transition: all 0.3s ease;
+   /* border-bottom: 1px solid #FBB6CE;*/
 }
 
 .navbar.scrolled {
@@ -43,19 +44,10 @@ body.no-scroll {
     box-shadow: none;
 }
 
-/* Fixed Spinner Styles - All spinners now pink */
-.spinner-border {
+.spinner-border.custom-spinner {
     color: #D53F8C !important;
     border-color: currentColor;
-    border-right-color: transparent !important;
-}
-
-.spinner-border.custom-spinner,
-.spinner-border.text-pink,
-#loadingScreen .spinner-border {
-    color: #D53F8C !important;
-    border-color: currentColor;
-    border-right-color: transparent !important;
+    border-right-color: transparent;
 }
 
 .modal-content {
@@ -75,23 +67,20 @@ body.no-scroll {
     overflow-y: auto;
 }
 
-#apiQueryInputContainer input, 
-#searchInput {
+#apiQueryInputContainer input, #searchInput {
     transition: all 0.3s ease;
     border: 1px solid #FBB6CE;
     background-color: #FFF5F7;
 }
 
-#apiQueryInputContainer input:focus, 
-#searchInput:focus {
+#apiQueryInputContainer input:focus, #searchInput:focus {
     outline: 3px solid #D53F8C !important;
     border: 1px solid #D53F8C;
     box-shadow: none;
     background-color: white;
 }
 
-#apiResponseContent, 
-#apiEndpoint {
+#apiResponseContent, #apiEndpoint {
     font-family: monospace;
     white-space: pre-wrap;
     word-wrap: break-word;
@@ -112,8 +101,8 @@ body.no-scroll {
     color: #D53F8C;
 }
 
-/* Enhanced Loading Screen */
 #loadingScreen {
+    color: #D53F8C;
     position: fixed;
     top: 0;
     left: 0;
@@ -126,18 +115,6 @@ body.no-scroll {
     align-items: center;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
-}
-
-#loadingScreen p {
-    color: #D53F8C;
-    margin-top: 15px;
-    font-size: 16px;
-}
-
-#loadingScreen .spinner-border {
-    width: 3rem;
-    height: 3rem;
-    border-width: 0.25em;
 }
 
 #nameContainer {
@@ -263,13 +240,4 @@ a:hover {
 
 .form-control:focus {
     background-color: white;
-}
-
-/* Animation for loading spinner */
-@keyframes spin {
-    to { transform: rotate(360deg); }
-}
-
-.spinner-border {
-    animation: spin 0.75s linear infinite;
 }
