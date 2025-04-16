@@ -46,6 +46,8 @@ body.no-scroll {
 
 .spinner-border.custom-spinner {
     color: #D53F8C !important;
+    border-color: currentColor;
+    border-right-color: transparent;
 }
 
 .modal-content {
