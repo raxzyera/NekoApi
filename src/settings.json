@@ -1,6 +1,6 @@
 {
   "name": "NekoApi's",
-  "version": "Rynn UI",
+  "version": "Naoki",
   "description": "Simple and Easy-to-Use API Documentation",
   "header": {
     "status": "Online!",
@@ -18,8 +18,8 @@
   },
   "links": [
     {
-      "name": "Source Code",
-      "url": "https://github.com/rynxzyy/Rynn-UI"
+      "name": "",
+      "url": ""
     },
     {
       "name": "Contact Me",
