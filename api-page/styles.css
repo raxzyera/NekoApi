@@ -172,17 +172,23 @@ body.no-scroll {
     color: #4A5568;
 }
 
+/* Tombol cyan dengan efek glassmorphism */
 .btn-dark {
-    background-color: #319795;
+    background: rgba(0, 255, 255, 0.2);
     color: #fff;
-    border: none;
-    border-radius: 8px;
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    border-radius: 12px;
     padding: 8px 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
     transition: all 0.3s ease;
 }
 
 .btn-dark:hover {
-    background-color: #2C7A7B;
+    background: rgba(0, 255, 255, 0.35);
+    box-shadow: 0 6px 25px rgba(0, 255, 255, 0.3);
+    color: #fff;
 }
 
 .form-control.is-invalid {
