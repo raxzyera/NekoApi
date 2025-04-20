@@ -54,6 +54,16 @@
       ]
     },
     {
+      "name": "Nsfw",
+      "items": [
+        {
+          "name": "Rule34",
+          "desc": "Blue Archive Random Images",
+          "path": "/api/rule34"
+        }
+      ]
+    }, 
+    {
       "name": "Search Tools",
       "items": [
         {
