@@ -59,7 +59,7 @@
         {
           "name": "Rule34",
           "desc": "Blue Archive Random Images",
-          "path": "/api/rule34"
+          "path": "/api/rule34?q="
         }
       ]
     }, 
